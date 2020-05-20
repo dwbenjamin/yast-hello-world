@@ -1,2 +1,2 @@
-# yast-hello-world
-Simple YaST Hello World module to create minimum structure and a working module.
+# YaST Hello World!
+## Simple YaST Hello World module to create minimum structure and a working module.

@@ -50,7 +50,7 @@ module Y2HelloWorld
         VBox(
           # ycp-ui Heading widget
           Heading(_('New Module')),
-          # ycp-ui Lable widget
+          # ycp-ui Label widget
           Label(_('Hello, World!')),
           # nested ycp-ui VBox widget
           VBox(
@@ -69,7 +69,7 @@ module Y2HelloWorld
                     '<i>yast/yast-ycp-ui-bindings/examples</i> repository.</p>'\
                     '<p>Look at the Readme.md in the <i>doc/</i> directory</p>'
                   )),
-            # ycp-ui Lable widget just for example
+            # ycp-ui Label widget just for example
             Left(Label(_('Label just to show a more complex layout.')))
           ),
           # finally the ycp-ui PushButton widget

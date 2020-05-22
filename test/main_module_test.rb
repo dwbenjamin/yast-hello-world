@@ -2,9 +2,9 @@
 # To change this template file, choose Tools | Templates
 # and open the template in the editor.
 
-require 'main_dialog'
+require 'y2hello_world/maindialog'
 
-describe MainDialog do
+describe Y2HelloWorld::MainDialog do
   before(:each) do
     @main_dialog = MainDialog.new
   end

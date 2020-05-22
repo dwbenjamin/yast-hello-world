@@ -1,6 +1,7 @@
-# frozen_string_literal: true
+# To change this license header, choose License Headers in Project Properties.
+# To change this template file, choose Tools | Templates
+# and open the template in the editor.
 
-# License stuff
 require 'yast'
 
 Yast.import 'UI'
@@ -9,7 +10,7 @@ Yast.import 'Label'
 # Simple Hello World! fully functioning example
 # @note This module can be changed using the YaST development tool
 #   "create-new-package"
-module HelloWorld
+module Y2HelloWorld
   # Simple class for the MainDialog
   class MainDialog
     include Yast::UIShortcuts

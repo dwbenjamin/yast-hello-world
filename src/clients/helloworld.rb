@@ -1,7 +1,9 @@
 # frozen_string_literal: true
 
-# License Stuff
+# To change this license header, choose License Headers in Project Properties.
+# To change this template file, choose Tools | Templates
+# and open the template in the editor.
 
-require 'helloworld/main_module'
+require 'y2helloworld/main_module'
 
-HelloWorld::MainDialog.new.run
+Y2HelloWorld::MainDialog.new.run

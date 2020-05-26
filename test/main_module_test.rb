@@ -1,17 +1,28 @@
-# frozen_string_literal: true
-
-# To change this license header, choose License Headers in Project Properties.
-# To change this template file, choose Tools | Templates
-# and open the template in the editor.
-
-require 'y2hello_world/maindialog'
+require_relative 'spec_helper'
+require 'y2helloworld/main_module'
 
 describe Y2HelloWorld::MainDialog do
-  before(:each) do
-    @main_dialog = MainDialog.new
-  end
+    before(:all) do
+      Yast.ui_component = 'ncurses'
+    end
 
-  it 'should display the MainDialog' do
-    # TODO
-  end
+    def mock_dialog data
+      data[:input] ||= :hello
+      ui = double("Yast::UI")
+      stub_const("Yast::UI", ui)
+
+      expect(ui).to receive(:OpenDialog).and_return(true)
+
+      expect(ui).to receive(:CloseDialog).and_return(true)
+
+      expect(ui).to receive(:UserInput).and_return(*data[:input])
+
+    end
+
+    it "return :cancel if user closes window" do
+      mock_dialog :input => :cancel
+      expect(Y2HelloWorld::MainDialog.new.run).to eq :cancel
+    end
+
+
 end

@@ -19,9 +19,9 @@ describe Y2HelloWorld::MainDialog do
 
     end
 
-    it "return :cancel if user closes window" do
+    it "return nil if user closes window" do
       mock_dialog :input => :cancel
-      expect(Y2HelloWorld::MainDialog.new.run).to eq :cancel
+      expect(Y2HelloWorld::MainDialog.new.run).to eq nil
     end
 
 

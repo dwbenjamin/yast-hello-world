@@ -1,0 +1,14 @@
+sudo: required
+language: bash
+services:
+  - docker
+
+before_install:
+  - docker build -t yast-hello-world-image .
+  # list the installed packages (just for easier debugging)
+  - docker run --rm -it yast-hello-world-image rpm -qa | sort
+  
+  script:
+  # the "yast-travis-ruby" script is included in the base yast-ruby image
+  # see https://github.com/yast/ci-ruby-container/blob/master/package/yast-travis-ruby
+  - docker run -it --rm -e TRAVIS=1 -e TRAVIS_JOB_ID="$TRAVIS_JOB_ID" yast-hello-world-image yast-travis-ruby

@@ -3,6 +3,6 @@
 # notice and this notice are preserved.  This file is offered as-is,
 # without any warranty.
 
-require 'y2helloworld/main_module'
+require "y2helloworld/main_module"
 
 Y2HelloWorld::MainDialog.new.run

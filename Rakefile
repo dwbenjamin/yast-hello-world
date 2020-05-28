@@ -3,7 +3,7 @@
 # notice and this notice are preserved.  This file is offered as-is,
 # without any warranty.
 
-require 'yast/rake'
+require "yast/rake"
 
 Yast::Tasks.configuration do |_conf|
 end

@@ -1,6 +1,7 @@
-# To change this license header, choose License Headers in Project Properties.
-# To change this template file, choose Tools | Templates
-# and open the template in the editor.
+#Copying and distribution of this file, with or without modification,
+#are permitted in any medium without royalty provided the copyright
+#notice and this notice are preserved.  This file is offered as-is,
+#without any warranty.
 
 require 'yast'
 

@@ -61,12 +61,7 @@ This package is an example of a YaST module.
 %license COPYING
 %{yast_desktopdir}
 %{yast_metainfodir}
-%{yast_moduledir}
 %{yast_clientdir}
-%{yast_ybindir}
-%{yast_scrconfdir}
-%{yast_fillupdir}
-%{yast_schemadir}
 %{yast_libdir}
 %{yast_icondir}
 %doc %{yast_docdir}

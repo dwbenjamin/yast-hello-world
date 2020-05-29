@@ -25,7 +25,9 @@ Group:          System/YaST
 Url:            https://github.com/dwbenjamin/yast-hello-world
 
 Source:         %{name}-%{version}.tar.bz2
-BuildRequires:  
+BuildRequires:  yast2 >= 3.1.176
+BuildRequires:  yast2-ruby-bindings >= 1.0.0
+
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
 %description
@@ -45,7 +47,8 @@ make %{?_smp_mflags}
 
 %files
 %defattr(-,root,root)
-%doc CONTRIBUTING.md README.md COPYING SECURITY.md
+%doc CONTRIBUTING.md README.md SECURITY.md
+%license COPYING
 
 %changelog
 

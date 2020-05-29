@@ -45,7 +45,7 @@ make %{?_smp_mflags}
 
 %files
 %defattr(-,root,root)
-%doc ChangeLog README COPYING
+%doc CONTRIBUTING.md README.md COPYING SECURITY.md
 
 %changelog
 

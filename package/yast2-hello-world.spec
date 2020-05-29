@@ -27,28 +27,49 @@ Url:            https://github.com/dwbenjamin/yast-hello-world
 Source:         %{name}-%{version}.tar.bz2
 BuildRequires:  yast2 >= 3.1.176
 BuildRequires:  yast2-ruby-bindings >= 1.0.0
+BuildRequires:  rubygem(%rb_default_ruby_abi:rspec)
+BuildRequires:  rubygem(%rb_default_ruby_abi:yast-rake)
+
+Requires:       yast2 >= 3.1.176
+Requires:       yast2-core >= 2.18.7
+Requires:       yast2-ruby-bindings >= 1.0.0
 
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
 %description
+This package is an example of a YaST module.
 
 %prep
 %setup -q
 
+%check
+%yast_check
+
 %build
-%configure
-make %{?_smp_mflags}
 
 %install
-%make_install
+%yast_install
+%yast_metainfo
 
 %post
+
 %postun
 
 %files
 %defattr(-,root,root)
 %doc CONTRIBUTING.md README.md SECURITY.md
 %license COPYING
+%{yast_desktopdir}
+%{yast_metainfodir}
+%{yast_moduledir}
+%{yast_clientdir}
+%{yast_ybindir}
+%{yast_scrconfdir}
+%{yast_fillupdir}
+%{yast_schemadir}
+%{yast_libdir}
+%{yast_icondir}
+%doc %{yast_docdir}
 
 %changelog
 

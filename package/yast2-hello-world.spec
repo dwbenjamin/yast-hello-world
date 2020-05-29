@@ -22,7 +22,7 @@ Release:        0
 Summary:        Simple YaST Hello World module to create minimum structure and a working module.
 License:        GPL-2.0-only
 Group:          System/YaST 
-Url:            https://github.com/dwbenjamin/yast-hello-world
+Url:            https://github.com/dwbenjamin/yast-hello-world/yast-hello-world
 
 Source:         %{name}-%{version}.tar.bz2
 BuildRequires:  yast2 >= 3.1.176

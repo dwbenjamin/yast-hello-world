@@ -43,7 +43,7 @@ namespace :new_module do
                 f.write "Y2#{input.capitalize}::MainDialog.new.run\r\n"
             }
 
-            text = File.read("src/lib/template.rb")
+            text = File.read("template.rb")
             new_contents = text.gsub(/HelloWorld/, "#{input.capitalize}")
             File.open("#{nd}/src/lib/y2#{input}/main_module.rb", "w") { |f| f.puts new_contents}
             

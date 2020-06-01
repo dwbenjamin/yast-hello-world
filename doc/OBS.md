@@ -3,6 +3,7 @@
 + Part 1 -- START-HERE.md
 + Part 2 -- TEAM-DEV.md
 + Part 3 -- This document
++ Part 4 -- CUSTOMIZE.md
 
 ### Prerequisites
 Open Build Service account

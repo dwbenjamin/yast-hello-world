@@ -8,6 +8,8 @@
 require "yast/rake"
 require "packaging"
 
+Dir.glob("src/lib/tasks/*.rake").each { |r| import r }
+
 Yast::Tasks.configuration do |_conf|
 end
 

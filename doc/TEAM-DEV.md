@@ -4,6 +4,7 @@
 + Part 1 -- START-HERE.md
 + Part 2 -- This document
 + Part 3 -- OBS.md
++ Part 4 -- CUSTOMIZE.md
 
 
 ### Prerequisites

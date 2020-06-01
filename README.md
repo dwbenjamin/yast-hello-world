@@ -9,9 +9,6 @@ In the doc folder you will find a series of documents designed to help from star
 
 + In the **doc** directory:
  1. Read the **START-HERE.md** file to setup your development environment.
- 2. Read the **TEAM-DEV.** file to integrate with GitHub.
- 3. Read the **OBS.md** file for Open Build Service instructions.
-
-
-# TODO
-## add instructions for customizing
+ 2. Read the **TEAM-DEV.md** file to integrate with GitHub (Optional).
+ 3. Read the **OBS.md** file for Open Build Service instructions (Optional).
+ 4. Read the **CUSTOMIZE.md** file to build your own module.

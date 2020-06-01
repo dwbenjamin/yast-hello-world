@@ -1,5 +1,6 @@
 # YaST Hello World!
 ## Simple YaST Hello World module to create minimum structure and a working module.
+[![Travis Build](https://travis-ci.org/dwbenjamin/yast-hello-world.svg?branch=master)](https://travis-ci.org/github/dwbenjamin/yast-hello-world)
 
 I created this project to help non professional and hobbyist developers and hackers, continue to expand the YaST project. YaST is extremely powerful and a bit overwhelming for a novice or hobbyist, in my opinion.  
 

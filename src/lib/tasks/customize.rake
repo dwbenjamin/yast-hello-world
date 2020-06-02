@@ -52,13 +52,11 @@ namespace :new_module do
     input = "yast-#{input}"
     if my_directories.include?(input)
       puts "Directory #{input} is protected."
+    elsif File.directory?(input)
+      puts "Cleaning up module #{input}."
+      FileUtils.rmtree(input)
     else
-      if File.directory?(input)
-        puts "Cleaning up module #{input}."
-        FileUtils.rmtree(input)
-      else
-        puts "No module #{input} to clean up."
-      end
+      puts "No module #{input} to clean up."
     end
   end
 end

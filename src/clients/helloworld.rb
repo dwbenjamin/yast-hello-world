@@ -7,9 +7,4 @@
 
 require "y2helloworld/main_module"
 
-if ARGV.any?("help")
-  # translators: command line help text for Hello World client module
-  puts "This YaST2 module does not support the command line interface."
-else
-  Y2HelloWorld::MainDialog.new.run
-end
+Y2HelloWorld::MainDialog.new.main

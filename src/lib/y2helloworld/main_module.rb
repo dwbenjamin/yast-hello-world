@@ -9,16 +9,33 @@ require "yast"
 
 Yast.import "UI"
 Yast.import "Label"
+Yast.import "CommandLine"
 
 # Simple Hello World! fully functioning example
 # @note This module can be changed using the YaST development tool
 #   "create-new-package"
 module Y2HelloWorld
   # Simple class for the MainDialog
-  class MainDialog
+  class MainDialog < Yast::Client
     include Yast::UIShortcuts
     include Yast::I18n
     include Yast::Logger
+
+    # Added for command line helper for https://bugzilla.opensuse.org/show_bug.cgi?id=1172340
+    # See for limited information
+    #   https://github.com/yast/yast-ruby-bindings/blob/master/src/ruby/yast/fun_ref.rb
+    # If this client is launched with command line options an error is returned
+    # If this client is launched with gui the guihandler will forward to what ever method
+    #  you choose, in this case "method(:run)" it is the "normal" starting point for your client.
+    # Check for command line arguments
+    def main
+      @cmdline_description = {
+        "id"         => "hello_world",
+        "guihandler" => fun_ref(method(:run), "sybol ()")
+      }
+
+      CommandLine.Run(@cmdline_description)
+    end
 
     # Display the dialog
     def run

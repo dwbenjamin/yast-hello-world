@@ -4,6 +4,7 @@
 + Part 1 -- This document
 + Part 2 -- TEAM-DEV.md
 + Part 3 -- OBS.md
++ Part 4 -- CUSTOMIZE.md
 
 
 ### Prerequisites

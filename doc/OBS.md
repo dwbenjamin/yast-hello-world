@@ -4,6 +4,7 @@
 + Part 2 -- TEAM-DEV.md
 + Part 3 -- This document
 + Part 4 -- CUSTOMIZE.md
++ Part 5 -- NEW_TODO.md
 
 ### Prerequisites
 Open Build Service account

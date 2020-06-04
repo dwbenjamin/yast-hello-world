@@ -7,4 +7,4 @@
 
 require "y2helloworld/main_module"
 
-Y2HelloWorld::MainDialog.new.run
+Y2HelloWorld::MainDialog.new.main

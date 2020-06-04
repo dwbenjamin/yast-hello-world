@@ -36,11 +36,12 @@ namespace :new_module do
       end
       File.open("#{nd}/src/clients/#{input}.rb", "w") do |f|
         f.write "require \"y2#{input}/main_module\"\r\n\r\n"
-        f.write "Y2#{input.capitalize}::MainDialog.new.run\r\n"
+        f.write "Y2#{input.capitalize}::MainDialog.new.main\r\n"
       end
 
       text = File.read("src/lib/template")
       new_contents = text.gsub(/HelloWorld/, input.capitalize)
+      new_contents = new_contents.gsub(/hello_world/, input)
       File.open("#{nd}/src/lib/y2#{input}/main_module.rb", "w") { |f| f.puts new_contents }
 
       my_edits.each do |e|

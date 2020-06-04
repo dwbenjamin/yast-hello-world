@@ -13,7 +13,7 @@ Yast.import "CommandLine"
 
 # Simple Hello World! fully functioning example
 # @note This module can be changed using the YaST development tool
-#   "create-new-package"
+#   rake new_module:create
 module Y2HelloWorld
   # Simple class for the MainDialog
   class MainDialog < Yast::Client
